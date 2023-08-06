@@ -4,6 +4,8 @@ import * as Asterisk from "../controllers/asterisk.controller";
 
 const router = Router();
 
-router.post("/StatusAsterisk", auth, Asterisk.StatusApiBase);
-router.post("/llamar", auth, Asterisk.amiDial);
+router.post("/Call", auth, Asterisk.OriginateCall);
+router.get("/Channels", auth, Asterisk.GetCoreShowChannels);
+router.post("/bulkCalls", auth, Asterisk.BulkCalls);
+
 export default router;

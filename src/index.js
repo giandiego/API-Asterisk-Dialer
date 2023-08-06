@@ -3,6 +3,7 @@ import fs from "fs";
 import https from "https";
 import "./database";
 import "./controllers/createDefaultUser";
+import "./controllers/events";
 
 // settings API 
 //HTTPS
